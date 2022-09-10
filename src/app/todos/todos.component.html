@@ -1,0 +1,25 @@
+<div class = "container">
+
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+      <th>ID</th>
+      <th>FirstName</th>
+      <th>Age</th>
+      <th>address</th>
+      <th>pincode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let data of users">
+      <td>{{data.id}}</td>
+      <td>{{data.firstName}}</td>
+      <td>{{data.age}}</td>
+      <td>{{data.address.streetName | uppercase}}</td>
+      <td>{{data.address.pincode}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
